@@ -83,13 +83,9 @@ public class Canvas extends JPanel implements ActionListener{
 		dieFace2 = new JLabel(dice.getImage(die2));
 		
 		JLabel playerName = new JLabel("Player1: " + p.getPlayerName());
-		JLabel playerMoney = new JLabel("Money: " + p.getPlayerMoney());
 		JLabel playerAI1 = new JLabel("Player2: " + p2.getPlayerName());
-		JLabel playerAI1_money = new JLabel("Money: " + p2.getPlayerMoney());
 		JLabel playerAI2 = new JLabel("Player3: " + p3.getPlayerName());
-		JLabel playerAI2_money = new JLabel("Money: " + p3.getPlayerMoney());
 		JLabel playerAI3 = new JLabel("Player4: " + p3.getPlayerName());
-		JLabel playerAI3_money = new JLabel("Money: " + p4.getPlayerMoney());
 		
 		JButton roll = new JButton();
 		roll.setText("start rollin'");
@@ -99,13 +95,9 @@ public class Canvas extends JPanel implements ActionListener{
 		
 		
 		userInfo.add(playerName);
-		userInfo.add(playerMoney);
 		userInfo.add(playerAI1);
-		userInfo.add(playerAI1_money);
 		userInfo.add(playerAI2);
-		userInfo.add(playerAI2_money);
 		userInfo.add(playerAI3);
-		userInfo.add(playerAI3_money);
 		
 		setLayout(new BorderLayout());
 		add(roll, BorderLayout.PAGE_END);
